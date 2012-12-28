@@ -6,6 +6,11 @@ A Selenium grid has no public API to get a list of browers attached and availabl
 
 This module parses `/grid/console` and returns a JSON array of the browers that are available.
 
+Install
+-------
+
+    npm install selenium-grid-status
+
 Usage
 -----
 
