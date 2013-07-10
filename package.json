@@ -1,7 +1,7 @@
 {
     "name": "selenium-grid-status",
     "description": "Fetch available browsers from a Selenium grid",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "./lib/index.js",
     "keywords": [
         "selenium", "grid", "status", "available"
