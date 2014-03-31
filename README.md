@@ -34,164 +34,170 @@ This should print something like this:
 
 ```
 {
-    "browsers": [
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*iexplore",
-            "maxInstances": "1"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*googlechrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*googlechrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*googlechrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*googlechrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "Selenium",
-            "platform": "MAC",
-            "browserName": "*googlechrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "chrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "chrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "chrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "chrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "chrome",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "firefox",
-            "maxInstances": "5"
-        },
-        {
-            "seleniumProtocol": "WebDriver",
-            "platform": "MAC",
-            "browserName": "internet explorer",
-            "maxInstances": "1"
-        }
-    ],
-    "configs": [
-        {
-            "port": "4445",
-            "servlets": "[]",
-            "host": "192.168.1.33",
-            "cleanUpCycle": "5000",
-            "browserTimeout": "0",
-            "hubHost": "localhost",
-            "registerCycle": "5000",
-            "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
-            "newSessionWaitTimeout": "-1",
-            "url": "http",
-            "remoteHost": "http",
-            "prioritizer": "null",
-            "register": "true",
-            "throwOnCapabilityNotPresent": "true",
-            "nodePolling": "5000",
-            "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-            "maxSession": "5",
-            "role": "node",
-            "jettyMaxThreads": "-1",
-            "hubPort": "4444",
-            "timeout": "300000"
-        }
+    [
+        "browsers": [
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*iexplore",
+                "maxInstances": "1"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*googlechrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*googlechrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*googlechrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*googlechrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "Selenium",
+                "platform": "MAC",
+                "browserName": "*googlechrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "chrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "chrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "chrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "chrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "chrome",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "firefox",
+                "maxInstances": "5"
+            },
+            {
+                "seleniumProtocol": "WebDriver",
+                "platform": "MAC",
+                "browserName": "internet explorer",
+                "maxInstances": "1"
+            }
+        ],
+        "configs": [
+            {
+                "port": "4445",
+                "servlets": "[]",
+                "host": "192.168.1.33",
+                "cleanUpCycle": "5000",
+                "browserTimeout": "0",
+                "hubHost": "localhost",
+                "registerCycle": "5000",
+                "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+                "newSessionWaitTimeout": "-1",
+                "url": "http",
+                "remoteHost": "http",
+                "prioritizer": "null",
+                "register": "true",
+                "throwOnCapabilityNotPresent": "true",
+                "nodePolling": "5000",
+                "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+                "maxSession": "5",
+                "role": "node",
+                "jettyMaxThreads": "-1",
+                "hubPort": "4444",
+                "timeout": "300000"
+            }
+        ],
+    ],[
+        "browsers": [
+            ...
+        ]
     ]
 }
 There are 1 node server available with 22 browsers attached and ready

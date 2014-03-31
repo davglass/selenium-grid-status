@@ -39,21 +39,43 @@ var tests = {
         topic: function() {
             grid.available({}, this.callback);
         },
-        'and return data': function (d){
-            assert.ok(d);
-            assert.ok(d.browsers);
-            assert.isArray(d.browsers);
-            assert.equal(d.browsers.length, 22);
-            assert.ok(d.configs);
-            assert.isArray(d.configs);
-            assert.equal(d.configs.length, 1);
-            var conf = d.configs[0],
-                b = d.browsers[0];
+        'and return data': function (nodes){
+            var node1browser = nodes[0].browser,
+                node1configs = nodes[0].configs,
+                node2browser = nodes[1].browser,
+                node2configs = nodes[1].configs;
+
+            assert.ok(nodes);
+            assert.isArray(nodes);
+
+            assert.ok(node1browser);
+            assert.isArray(node1browser);
+            assert.equal(node1browser.length, 22);
+            assert.ok(node1configs);
+            assert.isArray(node1configs);
+            assert.equal(node1configs.length, 1);
+
+            var conf = node1configs[0],
+                b = node1browser[0];
             assert.equal(conf.port, '5555');
             assert.equal(conf.host, '10.0.2.194');
             assert.equal(b.seleniumProtocol, 'Selenium');
             assert.equal(b.platform, 'MAC');
             assert.equal(b.browserName, '*iexplore');
+            assert.equal(b.maxInstances, '1');
+
+            assert.ok(node2browser);
+            assert.isArray(node2browser);
+            assert.equal(node2browser.length, 1);
+            assert.ok(node2configs);
+            assert.isArray(node2configs);
+            assert.equal(node2configs.length, 1);
+
+            var conf = node2configs[0],
+                b = node2browser[0];
+            assert.equal(conf.port, '5556');
+            assert.equal(b.seleniumProtocol, 'WebDriver');
+            assert.equal(b.browserName, 'phantomjs');
             assert.equal(b.maxInstances, '1');
         }
     }
