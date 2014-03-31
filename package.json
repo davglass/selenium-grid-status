@@ -1,34 +1,40 @@
 {
-    "name": "selenium-grid-status",
-    "description": "Fetch available browsers from a Selenium grid",
-    "version": "0.0.4",
-    "main": "./lib/index.js",
-    "keywords": [
-        "selenium", "grid", "status", "available"
-    ],
-    "dependencies": {
-        "htmlparser": "~1.7.6"
-    },
-    "devDependencies": {
-        "istanbul": "~0.1.8",
-        "yui-lint": "~0.1.1",
-        "jshint": "~0.9.0",
-        "vows": "*" 
-    },
-    "scripts": {
-        "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
-        "test": "istanbul cover --print both vows -- --spec ./tests/*.js"
-    },
-    "preferGlobal": "true",
-    "bugs": { "url" : "http://github.com/davglass/selenium-grid-status/issues" },
-    "licenses":[
-        {
-            "type" : "BSD",
-            "url" : "https://github.com/davglass/selenium-grid-status/blob/master/LICENSE"
-        }
-    ],
-    "repository": {
-        "type":"git",
-        "url":"http://github.com/davglass/selenium-grid-status.git"
+  "name": "selenium-grid-status",
+  "description": "Fetch available browsers from a Selenium grid",
+  "version": "0.0.4",
+  "main": "./lib/index.js",
+  "keywords": [
+    "selenium",
+    "grid",
+    "status",
+    "available"
+  ],
+  "dependencies": {
+    "htmlparser": "~1.7.6",
+    "mockery": "^1.4.0"
+  },
+  "devDependencies": {
+    "istanbul": "~0.2.6",
+    "yui-lint": "~0.1.1",
+    "jshint": "~0.9.0",
+    "vows": "*"
+  },
+  "scripts": {
+    "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
+    "test": "istanbul cover --print both vows -- --spec ./test/*.js"
+  },
+  "preferGlobal": "true",
+  "bugs": {
+    "url": "http://github.com/davglass/selenium-grid-status/issues"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/davglass/selenium-grid-status/blob/master/LICENSE"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/davglass/selenium-grid-status.git"
+  }
 }
