@@ -19,13 +19,13 @@ var grid = require('selenium-grid-status');
 
 grid.available({
     host: '10.0.1.25',
-}, function(err, status) {
+}, function(err, nodes) {
     if (err) {
         console.log('Error', err);
         process.exit(1);
     }
-    console.log(JSON.stringify(status, null, 4));
-    console.log('There are', status.configs.length, 'node server available with', status.browsers.length, 'browsers attached and ready');
+    console.log(JSON.stringify(nodes, null, 4));
+    console.log('There are', nodes.length, 'node server available');
 });
 
 ```
