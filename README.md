@@ -25,7 +25,7 @@ grid.available({
         process.exit(1);
     }
     console.log(JSON.stringify(status, null, 4));
-    console.log('There are', status.configs.length, 'node server available with', status.browser.length, 'browsers attached and ready');
+    console.log('There are', status.configs.length, 'node server available with', status.browsers.length, 'browsers attached and ready');
 });
 
 ```
@@ -34,7 +34,7 @@ This should print something like this:
 
 ```
 {
-    "browser": [
+    "browsers": [
         {
             "seleniumProtocol": "Selenium",
             "platform": "MAC",
@@ -196,3 +196,4 @@ This should print something like this:
 }
 There are 1 node server available with 22 browsers attached and ready
 ```
+
