@@ -169,92 +169,29 @@ This should print something like this:
         }
     ],
     "configs": [
-        [
-            {
-                "attr": "port",
-                "data": "4445"
-            },
-            {
-                "attr": "servlets",
-                "data": "[]"
-            },
-            {
-                "attr": "host",
-                "data": "192.168.1.33"
-            },
-            {
-                "attr": "cleanUpCycle",
-                "data": "5000"
-            },
-            {
-                "attr": "browserTimeout",
-                "data": "0"
-            },
-            {
-                "attr": "hubHost",
-                "data": "localhost"
-            },
-            {
-                "attr": "registerCycle",
-                "data": "5000"
-            },
-            {
-                "attr": "capabilityMatcher",
-                "data": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher"
-            },
-            {
-                "attr": "newSessionWaitTimeout",
-                "data": "-1"
-            },
-            {
-                "attr": "url",
-                "data": "http"
-            },
-            {
-                "attr": "remoteHost",
-                "data": "http"
-            },
-            {
-                "attr": "prioritizer",
-                "data": "null"
-            },
-            {
-                "attr": "register",
-                "data": "true"
-            },
-            {
-                "attr": "throwOnCapabilityNotPresent",
-                "data": "true"
-            },
-            {
-                "attr": "nodePolling",
-                "data": "5000"
-            },
-            {
-                "attr": "proxy",
-                "data": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy"
-            },
-            {
-                "attr": "maxSession",
-                "data": "5"
-            },
-            {
-                "attr": "role",
-                "data": "node"
-            },
-            {
-                "attr": "jettyMaxThreads",
-                "data": "-1"
-            },
-            {
-                "attr": "hubPort",
-                "data": "4444"
-            },
-            {
-                "attr": "timeout",
-                "data": "300000"
-            }
-        ]
+        {
+            "port": "4445",
+            "servlets": "[]",
+            "host": "192.168.1.33",
+            "cleanUpCycle": "5000",
+            "browserTimeout": "0",
+            "hubHost": "localhost",
+            "registerCycle": "5000",
+            "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+            "newSessionWaitTimeout": "-1",
+            "url": "http",
+            "remoteHost": "http",
+            "prioritizer": "null",
+            "register": "true",
+            "throwOnCapabilityNotPresent": "true",
+            "nodePolling": "5000",
+            "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+            "maxSession": "5",
+            "role": "node",
+            "jettyMaxThreads": "-1",
+            "hubPort": "4444",
+            "timeout": "300000"
+        }
     ]
 }
 There are 1 node server available with 22 browsers attached and ready
