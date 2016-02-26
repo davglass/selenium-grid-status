@@ -1,6 +1,8 @@
 Selenium Grid Status
 ====================
 
+![NPM](https://img.shields.io/npm/v/selenium-grid-status.svg)
+![Travis](https://img.shields.io/travis/davglass/selenium-grid-status.svg)
 
 A Selenium grid has no public API to get a list of browers attached and available to test with.
 
