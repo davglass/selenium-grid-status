@@ -19,6 +19,7 @@ var grid = require('selenium-grid-status');
 
 grid.available({
     host: '10.0.1.25',
+    port: 1337,
 }, function(err, status) {
     if (err) {
         console.log('Error', err);
@@ -35,7 +36,7 @@ This should print something like this:
 ```
 {
     [
-        "browsers": [
+        "browser": [
             {
                 "seleniumProtocol": "Selenium",
                 "platform": "MAC",
