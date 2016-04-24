@@ -204,3 +204,36 @@ This should print something like this:
 There are 1 node server available with 22 browsers attached and ready
 ```
 
+If you want to wait for selenium grid to become available and have at least one browser ready, you can use [node-when-cnct-ready](https://github.com/m59peacemaker/node-when-cnct-ready) in conjunction with `selenium-grid-status`:
+
+```js
+const hostReady = require('when-cnct-ready');
+const gridStatus = require('selenium-grid-status');
+
+const seleniumNode = () =>
+  new Promise(resolve => {
+    const poll = () =>
+      gridStatus.available({ host: 'localhost', port: 4444 }, (err, status) => {
+        err || status.length === 0 ? setTimeout(poll, 500) : resolve();
+      });
+
+    poll();
+  });
+
+const seleniumHub = () =>
+  new Promise((resolve, reject) => {
+    hostReady({ host: 'localhost', port: 4444 }, function (err) {
+      err ? reject(err) : resolve();
+    });
+  });
+
+seleniumHub()
+  .then(() => seleniumNode())
+  .then(() => console.log('Selenium grid ready'))
+  .catch(console.error);
+```
+
+License
+-------
+
+BSD
