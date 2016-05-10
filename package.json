@@ -10,14 +10,14 @@
     "available"
   ],
   "dependencies": {
-    "htmlparser": "~1.7.6",
-    "mockery": "^1.4.0"
+    "htmlparser": "^1.7.6"
   },
   "devDependencies": {
-    "istanbul": "~0.2.6",
-    "yui-lint": "~0.1.1",
-    "jshint": "~0.9.0",
-    "vows": "*"
+    "istanbul": "^0.4.2",
+    "yui-lint": "^0.2.0",
+    "jshint": "^2.9.1",
+    "vows": "*",
+    "mockery": "^1.4.0"
   },
   "scripts": {
     "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
